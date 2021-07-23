@@ -6,7 +6,6 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-
       decoration: InputDecoration(
         hintText: "Search",
           fillColor: secondaryColor,
