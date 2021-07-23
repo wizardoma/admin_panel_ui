@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
               child: Column(
                 children: [
                   DrawerHeader(
-                    child: Image.asset(""),
+                    child: Image.asset("assets/images/logo.png"),
                   ),
                 ],
               ),
