@@ -1,14 +1,16 @@
 import 'package:admin_panel_ui/constants.dart';
+import 'package:admin_panel_ui/responsive.dart';
+import 'package:admin_panel_ui/screens/file_info_card_list.dart';
 import 'package:admin_panel_ui/screens/widgets/dashboard_header.dart';
-import 'package:admin_panel_ui/screens/widgets/file_info_card.dart';
+import 'package:admin_panel_ui/screens/widgets/recent_files_section.dart';
 import 'package:admin_panel_ui/screens/widgets/storage_details_section.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Size _size = MediaQuery.of(context).size;
     return SafeArea(
       child: SingleChildScrollView(
         padding: EdgeInsets.all(
@@ -47,37 +49,46 @@ class DashboardScreen extends StatelessWidget {
                             label: Text(
                               "Add New",
                             ),
-                          )
+                          ),
                         ],
                       ),
                       SizedBox(
                         height: defaultPadding,
                       ),
-                      GridView.builder(
-                          shrinkWrap: true,
-                          itemCount: 4,
-                          gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 4,
-                                  childAspectRatio: 1.4,
-                                  crossAxisSpacing: defaultPadding),
-                          itemBuilder: (context, builder) {
-                            return FileInfoCard();
-                          }),
+                      Responsive(
+                        mobile: FileInfoCardList(
+                          crossAxisCount: _size.width < 600 ? 1 : 2,
+                          childAspectRatio: 2,
+                        ),
+                        tablet: FileInfoCardList(
+                          childAspectRatio: 1.2,
+                        ),
+                        desktop: FileInfoCardList(
+                          childAspectRatio: _size.width < 1400 ? 1.1 : 1.4,
+                        ),
+                      ),
                       SizedBox(
                         height: defaultPadding,
                       ),
-                      RecentFilesSections()
+                      if (Responsive.isMobile(context))
+                        SizedBox(
+                          width: defaultPadding,
+                        ),
+                      if (Responsive.isMobile(context))
+                        StorageDetailsSection(),
+                      RecentFilesSection(),
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: defaultPadding,
-                ),
-                Expanded(
-                  flex: 2,
-                  child: StorageDetailsSection(),
-                ),
+                if (!Responsive.isMobile(context))
+                  SizedBox(
+                    width: defaultPadding,
+                  ),
+                if (!Responsive.isMobile(context))
+                  Expanded(
+                    flex: 2,
+                    child: StorageDetailsSection(),
+                  ),
               ],
             ),
           ],

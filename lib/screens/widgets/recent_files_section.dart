@@ -21,50 +21,335 @@ class RecentFilesSection extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              child: DataTable(columns: [
-                DataColumn(
-                  label: Text("File Name"),
-                ),
-                DataColumn(
-                  label: Text("Date"),
-                ),
-                DataColumn(
-                  label: Text("Size"),
-                ),
-              ], rows: [
-                DataRow(
-                  cells: [
-                    DataCell(
-                      Row(
-                        children: [
-                          SvgPicture.asset(
-                            "assets/icons/file.svg",
-                            height: 30,
-                            width: 30,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: defaultPadding,
+              child: DataTable(
+                columns: [
+                  DataColumn(
+                    label: Text(
+                      "File Name",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Date",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Size",
+                    ),
+                  ),
+                ],
+                rows: [
+                  DataRow(
+                    cells: [
+                      DataCell(
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              "assets/icons/file.svg",
+                              height: 30,
+                              width: 30,
                             ),
-                            child: Text("Xd File"),
-                          )
-                        ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: defaultPadding,
+                              ),
+                              child: Text("XD File"),
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                    DataCell(
-                      Text(
-                        "01-03-2021",
+                      DataCell(
+                        Text(
+                          "01-03-2021",
+                        ),
                       ),
-                    ),
-                    DataCell(
-                      Text(
-                        "15mb",
+                      DataCell(
+                        Text(
+                          "15mb",
+                        ),
                       ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: DataTable(
+                columns: [
+                  DataColumn(
+                    label: Text(
+                      "File Name",
                     ),
-                  ],
-                )
-              ]),
-            )
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Date",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Size",
+                    ),
+                  ),
+                ],
+                rows: [
+                  DataRow(
+                    cells: [
+                      DataCell(
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              "assets/icons/file.svg",
+                              height: 30,
+                              width: 30,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: defaultPadding,
+                              ),
+                              child: Text("XD File"),
+                            )
+                          ],
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "01-03-2021",
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "15mb",
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: DataTable(
+                columns: [
+                  DataColumn(
+                    label: Text(
+                      "File Name",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Date",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Size",
+                    ),
+                  ),
+                ],
+                rows: [
+                  DataRow(
+                    cells: [
+                      DataCell(
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              "assets/icons/file.svg",
+                              height: 30,
+                              width: 30,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: defaultPadding,
+                              ),
+                              child: Text("XD File"),
+                            )
+                          ],
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "01-03-2021",
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "15mb",
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: DataTable(
+                columns: [
+                  DataColumn(
+                    label: Text(
+                      "File Name",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Date",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Size",
+                    ),
+                  ),
+                ],
+                rows: [
+                  DataRow(
+                    cells: [
+                      DataCell(
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              "assets/icons/file.svg",
+                              height: 30,
+                              width: 30,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: defaultPadding,
+                              ),
+                              child: Text("XD File"),
+                            )
+                          ],
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "01-03-2021",
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "15mb",
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: DataTable(
+                columns: [
+                  DataColumn(
+                    label: Text(
+                      "File Name",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Date",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Size",
+                    ),
+                  ),
+                ],
+                rows: [
+                  DataRow(
+                    cells: [
+                      DataCell(
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              "assets/icons/file.svg",
+                              height: 30,
+                              width: 30,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: defaultPadding,
+                              ),
+                              child: Text("XD File"),
+                            )
+                          ],
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "01-03-2021",
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "15mb",
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: DataTable(
+                columns: [
+                  DataColumn(
+                    label: Text(
+                      "File Name",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Date",
+                    ),
+                  ),
+                  DataColumn(
+                    label: Text(
+                      "Size",
+                    ),
+                  ),
+                ],
+                rows: [
+                  DataRow(
+                    cells: [
+                      DataCell(
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              "assets/icons/file.svg",
+                              height: 30,
+                              width: 30,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: defaultPadding,
+                              ),
+                              child: Text("XD File"),
+                            )
+                          ],
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "01-03-2021",
+                        ),
+                      ),
+                      DataCell(
+                        Text(
+                          "15mb",
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+
           ],
         ),
       ),
