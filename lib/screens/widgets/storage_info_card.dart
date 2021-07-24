@@ -12,8 +12,9 @@ class StorageInfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(defaultPadding / 2),
         padding: EdgeInsets.all(
-          defaultPadding,
+          defaultPadding / 2,
         ),
         decoration: BoxDecoration(
             border: Border.all(
