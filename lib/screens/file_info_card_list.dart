@@ -10,6 +10,7 @@ class FileInfoCardList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      physics: ScrollPhysics(),
         shrinkWrap: true,
         itemCount: 4,
         gridDelegate:
