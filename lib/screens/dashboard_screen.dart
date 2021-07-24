@@ -21,10 +21,12 @@ class DashboardScreen extends StatelessWidget {
               height: defaultPadding,
             ),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   flex: 5,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -61,7 +63,11 @@ class DashboardScreen extends StatelessWidget {
                                   crossAxisSpacing: defaultPadding),
                           itemBuilder: (context, builder) {
                             return FileInfoCard();
-                          })
+                          }),
+                      SizedBox(
+                        height: defaultPadding,
+                      ),
+                      RecentFilesSections()
                     ],
                   ),
                 ),
